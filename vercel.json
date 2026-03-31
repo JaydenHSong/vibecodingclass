@@ -1,4 +1,11 @@
 {
   "buildCommand": "echo 'No build required'",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/homeflix",
+      "destination": "/homeflix/",
+      "permanent": true
+    }
+  ]
 }
