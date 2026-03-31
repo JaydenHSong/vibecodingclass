@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homeflix - 시청할 영화 정보를 한눈에</title>
+  <meta name="description" content="인기 영화의 상영 정보와 포스터를 확인하세요.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">홈FLIX</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">홈</a></li>
+          <li><a href="#">TV프로그램</a></li>
+          <li><a href="#">영화</a></li>
+          <li><a href="#">최신 콘텐츠</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Billboard) -->
+  <main>
+    <section class="banner" id="banner">
+      <div class="banner-content">
+        <h2 class="banner-title" id="banner-title">Loading...</h2>
+        <div class="banner-buttons">
+          <button class="play-button">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            재생
+          </button>
+          <button class="info-button">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path
+                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+            </svg>
+            상세 정보
+          </button>
+        </div>
+        <p class="banner-description" id="banner-overview">
+          조금만 기다려주세요. 정보를 불러오고 있습니다...
+        </p>
+      </div>
+      <div class="banner-fade-bottom"></div>
+    </section>
+
+    <!-- Movies Rows -->
+    <section class="row">
+      <h2 class="row-title">인기 영화</h2>
+      <div class="row-posters" id="popular-movies">
+        <!-- Movies will be dynamically injected here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 흠fliex. TMDB API 사용 프로젝트입니다.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
