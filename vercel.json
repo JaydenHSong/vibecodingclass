@@ -6,6 +6,11 @@
       "source": "/homeflix",
       "destination": "/homeflix/",
       "permanent": true
+    },
+    {
+      "source": "/todo",
+      "destination": "/todo/",
+      "permanent": true
     }
   ]
 }
